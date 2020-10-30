@@ -1,0 +1,34 @@
+.loading_spinner{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+    .spinner{
+        height: 50%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border: 10px solid map-get($main_colors, primary-color);
+        border-radius: 300px;
+        background-color: map-get($main_colors, secondary-color);
+
+        i{
+            font-size: 50px;
+            color: map-get($main_colors, tertiary-color);
+            animation: rotate 1500ms linear both infinite;
+        }
+
+        h2{
+            font-family: Shrikhand-Regular;
+            font-size: 30px;
+            color: map-get($main_colors, tertiary-color);
+            animation: left_to_right 500ms linear both infinite alternate;
+        }
+    }
+}
