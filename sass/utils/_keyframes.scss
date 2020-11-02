@@ -33,3 +33,14 @@
         transform: translateX(5px);
     }
 }
+
+// opacity reverse
+
+@keyframes opacity_reverse{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
