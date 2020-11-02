@@ -6,7 +6,7 @@ main{
     top: 0px;
     left: 0px;
     z-index: 0;
-    animation: z-index 0ms 2500ms linear forwards;
+    animation: z-index 0ms map-get($delays, main_page_delay) linear forwards;
 
     @import "./utils";
 }

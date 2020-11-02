@@ -9,7 +9,7 @@
     top: 0px;
     z-index: 1;
     background-color: black;
-    animation: opacity_reverse 500ms 2000ms linear forwards;
+    animation: opacity_reverse 500ms map-get($delays, loading_page_delay) linear forwards;
 
 
     .loading_spinner{
