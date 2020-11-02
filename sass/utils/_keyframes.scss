@@ -44,3 +44,14 @@
         opacity: 0;
     }
 }
+
+// z-index
+
+@keyframes z-index{
+    from{
+        z-index: 0;
+    }
+    to{
+        z-index: 2;
+    }
+}

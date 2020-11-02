@@ -6,8 +6,10 @@
     align-items: center;
     justify-content: center;
     position: absolute;
+    top: 0px;
+    z-index: 1;
     background-color: black;
-    animation: opacity_reverse 1000ms 3000ms linear both;
+    animation: opacity_reverse 500ms 2000ms linear forwards;
 
 
     .loading_spinner{

@@ -1,4 +1,20 @@
 body{
+    width: 100%;
     margin: 0px;
     padding: 0px;
+    position: absolute;
+    top: 0px;
+
+    // LOADING PAGE
+
+    @import "./loading_page";
+
+    //header
+
+    @import "./header";
+
+    //main
+
+    @import "./main";
+
 }
