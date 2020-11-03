@@ -8,5 +8,11 @@ main{
     z-index: 0;
     animation: z-index 0ms map-get($delays, main_page_delay) linear forwards;
 
+    // UTILS
+
     @import "./utils";
+
+    // RESULT
+
+    @import "./result";
 }
