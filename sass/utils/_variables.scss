@@ -6,6 +6,15 @@ $main_colors: (
     tertiary-color: #99E2D0
 );
 
+// bg color
+
+$light_bg_color: #F2F2F2;
+$darken_bg_color: darken(#F2F2F2, 5);
+
+// button
+
+$button_bg_color: linear-gradient(to top, map-get($main_colors, primary-color), map-get($main_colors, secondary-color));
+
 // DELAY
 
 $delays: (
