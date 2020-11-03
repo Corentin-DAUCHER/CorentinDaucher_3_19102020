@@ -5,11 +5,27 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     top: 0px;
+    left: 0px;
     z-index: 1;
     background-color: black;
     animation: opacity_reverse 500ms map-get($delays, loading_page_delay) linear forwards;
+
+    &:active{
+        pointer-events: none;
+        cursor: none;
+    }
+
+    &:hover{
+        pointer-events: none;
+        cursor: none;
+    }
+
+    &:focus{
+        pointer-events: none;
+        cursor: none;
+    }
 
 
     .loading_spinner{
