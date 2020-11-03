@@ -1,0 +1,43 @@
+footer{
+    width: 100%;
+    background-color: #354146;
+
+    .container{
+        width: 90%;
+        padding: 15px;
+        color: white;
+
+        &__title{
+            width: 100%;
+            padding: 15px 0px;
+
+            h3{
+                font-family: Shrikhand;
+            }
+        }
+
+        &__infos{
+            width: 100%;
+
+            div{
+                display: flex;
+                flex-direction: row;
+
+                i{
+                    width: 10%;
+                    padding: 5px 0px;
+                }
+
+                h4{
+                    width: 90%;
+                    padding: 5px 0px;
+                }
+            }
+
+            h4{
+                width: 90%;
+                padding: 5px 0px;
+            }
+        }
+    }
+}
