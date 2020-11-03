@@ -60,7 +60,17 @@
                 background: $button_bg_color;
                 color: white;
                 font-size: 25px;
-                box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.5);
+                box-shadow: map-get($box_shadows, light_box_shadow);
+
+                &:active{
+                    background: $lighten_button_bg_color;
+                    box-shadow: map-get($box_shadows, darken_box_shadow);
+                    outline: none;
+                }
+
+                &:focus{
+                    outline: none;
+                }
             }
         }
     }
@@ -86,7 +96,7 @@
                 flex-direction: row;
                 align-items: center;
                 border-radius: 15px;
-                box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.5);
+                box-shadow: map-get($box_shadows, light_box_shadow);
                 
                 .block_number{
                     height: 25px;
