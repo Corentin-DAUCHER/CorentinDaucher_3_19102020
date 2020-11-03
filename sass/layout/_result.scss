@@ -20,6 +20,7 @@
         .restaurant{
             width: 90%;
             height: 300px;
+            margin: 15px 0px;
             display: flex;
             flex-direction: column;
             border-radius: 15px;
@@ -37,10 +38,23 @@
                     border-radius: 15px 15px 0px 0px;
                 }
 
-                h3{
+                .enabled{
                     height: fit-content;
                     width: fit-content;
                     padding: 3px;
+                    opacity: 0;
+                    position: relative;
+                    top: 12px;
+                    right: 90px;
+                    background-color: map-get($main_colors, tertiary-color);
+                    animation: opacity 280ms 0ms linear alternate infinite both;
+                }
+
+                .disabled{
+                    height: fit-content;
+                    width: fit-content;
+                    padding: 3px;
+                    opacity: 0;
                     position: relative;
                     top: 12px;
                     right: 90px;

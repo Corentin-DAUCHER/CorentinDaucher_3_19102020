@@ -45,6 +45,17 @@
     }
 }
 
+// opacity
+
+@keyframes opacity{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 // z-index
 
 @keyframes z-index{
