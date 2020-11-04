@@ -6,7 +6,7 @@
 
     &__title{
         padding-top: 15px;
-        padding-left: 15px;
+        padding-left: 3%;
     }
 
     &__container{
@@ -17,6 +17,12 @@
         align-items: center;
         justify-content: space-between;
 
+        @media all and (min-width: $tab_vertical_bp){
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
         .restaurant{
             width: 90%;
             height: 300px;
@@ -25,6 +31,14 @@
             flex-direction: column;
             border-radius: 15px;
             box-shadow: map-get($box_shadows, light_box_shadow);
+
+            @media all and (min-width: $tab_vertical_bp){
+                width: 45%;
+            }
+
+            @media all and (min-width: $tab_horizontal_bp){
+                width: 30%;
+            }
 
             &__img{
                 height: 80%;

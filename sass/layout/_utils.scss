@@ -4,30 +4,22 @@
 
     &__search_bar{
         width: 100%;
+        padding: 15px 0px;
         display: flex;
         flex-direction: row;
         align-items: center;
         background-color: $darken_bg_color;
 
         i{
-            width: 10%;
+            width: fit-content;
             margin-left: auto;
             font-size: 20px;
         }
 
-        input{
-            width: 50%;
+        h3{
+            width: fit-content;
+            padding: 0px 10px;
             margin-right: auto;
-            padding: 15px 0px;
-            font-size: 20px;
-            text-align: center;
-            border: none;
-            font-family: Roboto-Regular;
-            background-color: $darken_bg_color;
-
-            &:focus{
-                outline-style: none;
-            }
         }
     }
 
@@ -79,18 +71,28 @@
         width: 100%;
 
         .container{
-            width: 100%;
-            padding: 15px 0px;
+            width: 94%;
+            padding: 15px 3%;
             display: flex;
             flex-direction: column;
+            align-items: center;
+
+            @media all and (min-width: $tab_vertical_bp){
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
 
             h2{
-                margin-left: 3%;
+                width: 100%;
+
+                @media all and (min-width: $tab_vertical_bp){
+                    width: 100%;
+                }
             }
 
             &__block{
-                width: 85%;
-                margin: 20px 5%;
+                width: 280px;
+                margin: 20px auto;
                 padding: 20px 0px;
                 display: flex;
                 flex-direction: row;

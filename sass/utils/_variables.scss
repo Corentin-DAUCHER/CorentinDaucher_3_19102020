@@ -32,4 +32,9 @@ $delays: (
 $box_shadows: (
     light_box_shadow: 0px 0px 12px 0px rgba(0,0,0,0.5),
     darken_box_shadow: 0px 0px 12px 0px rgba(0,0,0,0.8)
-)
+);
+
+// BREAKPOINTs
+
+$tab_vertical_bp: 700px;
+$tab_horizontal_bp: 1200px;
