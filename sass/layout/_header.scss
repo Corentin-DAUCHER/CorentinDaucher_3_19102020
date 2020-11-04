@@ -9,14 +9,32 @@ header{
     .header__container{
         height: 100%;
         width: 100%;
+        padding: 15px 0px;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         box-shadow: map-get($box_shadows, light_box_shadow);
 
-        a{
-            margin: 15px 0px;
+        .previous{
+            position: absolute;
+            left: 15px;
+            font-size: 30px;
+            text-decoration: none;
+            color: black;
+
+            .inactive{
+                height: 100%;
+                display: none;
+            }
+
+            .active{
+                height: 100%;
+                display: block;
+            }
+        }
+
+        .logo{
             text-decoration: none;
         }
     }
