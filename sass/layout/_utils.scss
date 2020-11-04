@@ -71,28 +71,30 @@
         width: 100%;
 
         .container{
-            width: 94%;
-            padding: 15px 3%;
+            width: 100%;
+            padding: 15px 0px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: space-around;
 
             @media all and (min-width: $tab_vertical_bp){
                 flex-direction: row;
                 flex-wrap: wrap;
             }
 
-            h2{
+            &__text{
                 width: 100%;
 
-                @media all and (min-width: $tab_vertical_bp){
-                    width: 100%;
+                h2{
+                    padding-left: 15px;
                 }
+
             }
 
             &__block{
                 width: 280px;
-                margin: 20px auto;
+                margin: 20px 0px;
                 padding: 20px 0px;
                 display: flex;
                 flex-direction: row;
