@@ -97,8 +97,22 @@
                     align-items: center;
                     justify-content: center;
 
-                    i{
+                    .empty{
+                        position: relative;
+                        font-size: 31px;
+                        z-index: 1;
+                    }
+
+                    .full{
+                        position: absolute;
                         font-size: 25px;
+                        color: red;
+                        opacity: 0;
+                        z-index: 2;
+
+                        &:hover{
+                            animation: opacity 500ms 0ms linear both;
+                        }
                     }
                 }
             }
