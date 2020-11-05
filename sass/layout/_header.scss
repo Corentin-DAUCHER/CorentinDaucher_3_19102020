@@ -3,6 +3,7 @@ header{
     position: relative;
     top: 0px;
     left: 0px;
+    background-color: white;
     z-index: 0;
     animation: z-index 0ms map-get($delays, main_page_delay) linear both;
 
