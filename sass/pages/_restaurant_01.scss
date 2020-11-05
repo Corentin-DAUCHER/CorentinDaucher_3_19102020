@@ -90,6 +90,7 @@
                 width: 100%;
                 display: flex;
                 flex-direction: column;
+                transform-origin: top;
 
                 .item{
                     height: 80px;
@@ -100,6 +101,7 @@
                     justify-content: space-between;
                     background-color: white;
                     border-radius: 15px;
+                    animation: opacity 4000ms map-get($delays, item_delay) linear both;
 
                     &__name{
                         width: 55%;
@@ -126,6 +128,18 @@
                         background-color: map-get($main_colors, tertiary-color);
                     }
                 }
+            }
+
+            &__01{
+                animation: scale-y 800ms map-get($delays, item_delay) linear both;
+            }
+
+            &__02{
+                animation: scale-y 800ms map-get($delays, item_delay) + 500ms linear both;
+            }
+
+            &__03{
+                animation: scale-y 800ms map-get($delays, item_delay) + 1000ms linear both;
             }
         }
     }
