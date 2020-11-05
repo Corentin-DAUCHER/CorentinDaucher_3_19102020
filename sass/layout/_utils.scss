@@ -1,6 +1,5 @@
 .utils{
     width: 100%;
-    margin-top: 10px;
 
     &__search_bar{
         width: 100%;
@@ -69,6 +68,7 @@
 
     &__function{
         width: 100%;
+        background-color: white;
 
         .container{
             width: 100%;
