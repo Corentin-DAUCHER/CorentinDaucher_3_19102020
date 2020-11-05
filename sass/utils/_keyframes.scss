@@ -67,7 +67,7 @@
     }
 }
 
-// scale x
+// scale-x
 
 @keyframes scale-x{
     from{
@@ -86,5 +86,16 @@
     }
     to{
         transform: scaleY(1);
+    }
+}
+
+// translate x
+
+@keyframes translate-x{
+    from{
+        transform: translate(100%);
+    }
+    to{
+        transform: translate(0%);
     }
 }

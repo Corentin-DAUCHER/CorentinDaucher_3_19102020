@@ -109,6 +109,21 @@
                         padding: 0px 0px 0px 5%;
                     }
 
+                    .div_item{
+                        height: 80px;
+                        width: 100%;
+                        position: absolute;
+                        z-index: 3;
+
+                        &:hover + .item__price{
+                            animation: translate-x 200ms 0ms linear both;
+                        }
+
+                        &:hover + .item__price + .item__logo{
+                            animation: scale-x 200ms 0ms linear both;
+                        }
+                    }
+
                     &__price{
                         height: 65px;
                         width: 20%;
@@ -116,6 +131,9 @@
                         display: flex;
                         flex-direction: column;
                         justify-content: flex-end;
+                        position: relative;
+                        transform: translateX(100%);
+                        text-align: center;
                     }
 
                     &__logo{
@@ -124,6 +142,8 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        transform: scaleX(0);
+                        transform-origin: right;
                         border-radius: 0px 15px 15px 0px;
                         background-color: map-get($main_colors, tertiary-color);
                     }
