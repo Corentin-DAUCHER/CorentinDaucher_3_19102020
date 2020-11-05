@@ -101,7 +101,7 @@
                     justify-content: space-between;
                     background-color: white;
                     border-radius: 15px;
-                    animation: opacity 4000ms map-get($delays, item_delay) linear both;
+                    animation: opacity 2000ms map-get($delays, item_delay) linear both;
 
                     &__name{
                         width: 55%;
