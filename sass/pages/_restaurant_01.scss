@@ -164,6 +164,28 @@
                 animation: scale-y 800ms map-get($delays, item_delay) + 1000ms linear both;
             }
         }
+
+        input[type=button]{
+            height: 80px;
+            width: 280px;
+            margin: 3% auto 0% auto;
+            border: none;
+            border-radius: 15px;
+            font-size: 18px;
+            color: white;
+            background: $gradient_bg_color;
+            box-shadow: map-get($box_shadows, light_box_shadow);
+
+            &:active{
+                background: $lighten_button_bg_color;
+                box-shadow: map-get($box_shadows, darken_box_shadow);
+                outline: none;
+            }
+
+            &:focus{
+                outline: none;
+            }
+        }
     }
 }
 
