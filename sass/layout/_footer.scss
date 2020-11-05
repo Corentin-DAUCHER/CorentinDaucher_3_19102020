@@ -1,6 +1,7 @@
 footer{
     width: 100%;
     background-color: #354146;
+    animation: z-index 0ms map-get($delays, main_page_delay) linear both;
 
     .container{
         width: 90%;

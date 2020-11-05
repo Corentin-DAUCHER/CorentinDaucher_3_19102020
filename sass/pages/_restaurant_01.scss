@@ -1,14 +1,130 @@
-main{
+.restaurant_main{
     width: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    animation: z-index 0ms map-get($delays, main_page_delay) linear both;
 
     .restaurant_photo{
         height: 200px;
         width: 100%;
+        position: absolute;
 
         img{
             height: 100%;
             width: 100%;
             object-fit: cover;
+        }
+    }
+
+    .menu{
+        width: 94%;
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 130px;
+        left: 0px;
+        background-color: $darken_bg_color;
+        border-radius: 15px 15px 0px 0px;
+
+        .title{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            &__text{
+                width: fit-content;
+            }
+
+            &__logo{
+
+                .empty{
+                    position: relative;
+                    font-size: 25px;
+                    opacity: 1;
+                    z-index: 1;
+                }
+
+                .full{
+                    position: absolute;
+                    font-size: 25px;
+                    color: red;
+                    opacity: 0;
+                    z-index: 2;
+
+                    &:hover{
+                        animation: opacity 500ms 0ms linear both;
+                    }
+
+                    &:hover + .empty{
+                        animation: opacity_reverse 500ms 0ms linear both;
+                    }
+                }
+            }
+        }
+
+        .plat{
+            height: fit-content;
+            width: 100%;
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+
+            &__title{
+                width: fit-content;
+                display: flex;
+                flex-direction: column;
+
+                div{
+                    height: 3px;
+                    width: 75%;
+                    background-color: map-get($main_colors, tertiary-color);
+                }
+            }
+
+            &__container{
+                height: fit-content;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                .item{
+                    height: fit-content;
+                    width: 100%;
+                    margin-top: 15px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    background-color: white;
+                    border-radius: 15px;
+
+                    &__name{
+                        height: 90%;
+                        width: 65%;
+                        padding: 5% 0% 5% 5%;
+                    }
+
+                    &__price{
+                        height: 90%;
+                        width: 10%;
+                        padding: 5% 5% 5% 0%;
+                    }
+
+                    &__logo{
+                        height: 100%;
+                        width: 15%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: map-get($main_colors, tertiary-color);
+                    }
+                }
+            }
         }
     }
 }
