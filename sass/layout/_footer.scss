@@ -6,7 +6,6 @@ footer{
         width: 90%;
         margin: 0px auto;
         padding: 15px;
-        color: white;
 
         &__title{
             width: 100%;
@@ -20,6 +19,7 @@ footer{
 
             h3{
                 font-family: Shrikhand;
+                color: white;
             }
         }
 
@@ -45,17 +45,20 @@ footer{
                 i{
                     width: fit-content;
                     padding: 5px 0px;
+                    color: white;
                 }
 
                 h4{
                     width: fit-content;
                     padding: 5px 5px;
+                    color: white;
                 }
             }
 
             h4{
                 width: fit-content;
                 padding: 5px 0px;
+                color: white;
             }
         }
     }

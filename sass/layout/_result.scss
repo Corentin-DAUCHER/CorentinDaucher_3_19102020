@@ -112,7 +112,8 @@
 
                     .empty{
                         position: relative;
-                        font-size: 31px;
+                        font-size: 25px;
+                        opacity: 1;
                         z-index: 1;
                     }
 
@@ -125,6 +126,10 @@
 
                         &:hover{
                             animation: opacity 500ms 0ms linear both;
+                        }
+
+                        &:hover + .empty{
+                            animation: opacity_reverse 500ms 0ms linear both;
                         }
                     }
                 }
