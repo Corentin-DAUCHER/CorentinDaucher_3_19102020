@@ -112,7 +112,7 @@
                         z-index: 3;
 
                         &:hover + .item__name{
-                            //animation: scale-x_reduce 200ms 0ms linear both;
+                            animation: width-reduce 200ms 0ms linear both;
                         }
 
                         &:hover + .item__name + .item__price{
@@ -127,6 +127,7 @@
                     &__name{
                         width: 70%;
                         padding: 0px 5%;
+                        transform-origin: left;
 
                         h3{
                             white-space: nowrap;

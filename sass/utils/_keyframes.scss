@@ -96,6 +96,17 @@
         transform: translate(0%);
     }
     to{
-        transform: translate(-100%);
+        transform: translate(-20%);
+    }
+}
+
+// width-reduce
+
+@keyframes width-reduce{
+    from{
+        width: 70%;
+    }
+    to{
+        width: 50%;
     }
 }
