@@ -95,59 +95,72 @@
                 transform-origin: top;
 
                 .item{
-                    height: 80px;
+                    height: 120px;
                     width: 100%;
                     margin-top: 15px;
                     display: flex;
+                    flex-direction: row;
                     align-items: center;
-                    justify-content: space-between;
                     background-color: white;
                     border-radius: 15px;
                     animation: opacity 2000ms map-get($delays, item_delay) linear both;
 
-                    &__name{
-                        width: 55%;
-                        margin: 15px 0px;
-                        padding: 0px 0px 0px 5%;
-                    }
-
                     .div_item{
-                        height: 80px;
+                        height: 120px;
                         width: 100%;
                         position: absolute;
                         z-index: 3;
 
-                        &:hover + .item__price{
+                        &:hover + .item__name{
+                            //animation: scale-x_reduce 200ms 0ms linear both;
+                        }
+
+                        &:hover + .item__name + .item__price{
                             animation: translate-x 200ms 0ms linear both;
                         }
 
-                        &:hover + .item__price + .item__logo{
+                        &:hover + .item__name + .item__price + .item__logo{
                             animation: scale-x 200ms 0ms linear both;
                         }
                     }
 
+                    &__name{
+                        width: 70%;
+                        padding: 0px 5%;
+
+                        h3{
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+
+                        h5{
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+
                     &__price{
-                        height: 65px;
-                        width: 20%;
-                        padding-bottom: 15px;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: flex-end;
-                        position: relative;
-                        transform: translateX(100%);
-                        text-align: center;
+                        width: 10%;
+                        padding: 0px 5%;
                     }
 
                     &__logo{
-                        height: 80px;
-                        width: 20%;
+                        height: 120px;
+                        width: 10%;
+                        padding: 0px 5%;
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        transform: scaleX(0);
+                        position: absolute;
+                        right: 0px;
+                        transform: scale(0);
                         transform-origin: right;
-                        border-radius: 0px 15px 15px 0px;
+                        color: white;
                         background-color: map-get($main_colors, tertiary-color);
+                        border-radius: 0px 15px 15px 0px;
+                        font-size: 18px;
                     }
                 }
             }
