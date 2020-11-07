@@ -7,9 +7,14 @@
     animation: z-index 0ms map-get($delays, main_page_delay) linear both;
 
     .restaurant_photo{
-        height: 200px;
+        height: 150px;
         width: 100%;
         position: absolute;
+
+        @media all and (min-width: 1000px){
+            position: fixed;
+            height: 1080px;
+        }
 
         img{
             height: 100%;
