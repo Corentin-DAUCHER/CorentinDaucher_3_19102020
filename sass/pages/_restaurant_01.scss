@@ -1,7 +1,7 @@
 .restaurant_main{
     width: 100%;
     position: relative;
-    top: 0px;
+    top: 80px;
     left: 0px;
     z-index: 0;
     animation: z-index 0ms map-get($delays, main_page_delay) linear both;
@@ -13,7 +13,7 @@
 
         @media all and (min-width: 1000px){
             position: fixed;
-            height: 1080px;
+            height: 100vh;
         }
 
         img{
@@ -210,5 +210,5 @@
 
 .restaurant_footer{
     position: relative;
-    top: 130px;
+    top: 210px;
 }
