@@ -2,17 +2,18 @@
 
 $main_colors: (
     primary-color: #9356DC,
-    lighten-primary-color: lighten(#9356DC, 5),
+    lighten-primary-color: lighten(#9356DC, 5%),
+    high-lighten-primary-color: lighten(#9356DC, 35%),
     secondary-color: #FF79DA,
-    lighten-secondary-color: lighten(#FF79DA, 5),
+    lighten-secondary-color: lighten(#FF79DA, 5%),
     tertiary-color: #99E2D0,
-    lighten-tertiary-color: lighten(#99E2D0, 5),
+    lighten-tertiary-color: lighten(#99E2D0, 5%),
 );
 
 // bg color
 
 $light_bg_color: #F2F2F2;
-$darken_bg_color: darken(#F2F2F2, 5);
+$darken_bg_color: darken(#F2F2F2, 5%);
 $gradient_bg_color: linear-gradient(to top, map-get($main_colors, primary-color), map-get($main_colors, secondary-color));
 
 // button

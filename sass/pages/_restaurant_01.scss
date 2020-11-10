@@ -111,23 +111,16 @@
                     border-radius: 15px;
                     animation: opacity 2000ms map-get($delays, item_delay) linear both;
 
-                    .div_item{
-                        height: 120px;
-                        width: 100%;
-                        position: absolute;
-                        z-index: 3;
+                    &:hover .item__name{
+                        animation: width-reduce 200ms 0ms linear both;
+                    }
 
-                        &:hover + .item__name{
-                            animation: width-reduce 200ms 0ms linear both;
-                        }
+                    &:hover .item__price{
+                        animation: translate-x 200ms 0ms linear both;
+                    }
 
-                        &:hover + .item__name + .item__price{
-                            animation: translate-x 200ms 0ms linear both;
-                        }
-
-                        &:hover + .item__name + .item__price + .item__logo{
-                            animation: scale-x 200ms 0ms linear both;
-                        }
+                    &:hover .item__logo{
+                        animation: scale-x 200ms 0ms linear both;
                     }
 
                     &__name{
@@ -151,6 +144,7 @@
                     &__price{
                         width: 10%;
                         padding: 0px 5%;
+                        text-align: center;
                     }
 
                     &__logo{
