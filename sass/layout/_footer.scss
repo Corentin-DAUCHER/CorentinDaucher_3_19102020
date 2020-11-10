@@ -1,5 +1,6 @@
 .footer{
     width: 100%;
+    position: relative;
     background-color: #354146;
     animation: z-index 0ms map-get($delays, main_page_delay) linear both;
 
@@ -18,9 +19,14 @@
                 justify-content: center;
             }
 
-            h3{
-                font-family: Shrikhand;
-                color: white;
+            a{
+                text-decoration: none;
+                cursor: pointer;
+
+                h3{
+                    font-family: Shrikhand;
+                    color: white;
+                }
             }
         }
 
@@ -34,10 +40,12 @@
                 justify-content: center;
             }
 
-            div{
+            a{
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+                text-decoration: none;
+                cursor: pointer;
 
                 @media all and (min-width: $tab_vertical_bp){
                     justify-content: center;
@@ -45,21 +53,25 @@
 
                 i{
                     width: fit-content;
-                    padding: 5px 0px;
+                    padding: 5px 5px 5px 0px;
                     color: white;
                 }
 
                 h4{
                     width: fit-content;
-                    padding: 5px 5px;
                     color: white;
                 }
             }
 
-            h4{
-                width: fit-content;
-                padding: 5px 0px;
-                color: white;
+            a{
+                text-decoration: none;
+                cursor: pointer;
+
+                h4{
+                    width: fit-content;
+                    padding: 5px 0px;
+                    color: white;
+                }
             }
         }
     }
