@@ -2,54 +2,114 @@
     height: 100vh;
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: fixed;
     top: 0px;
-    left: 0px;
     z-index: 1;
-    background-color: black;
-    animation: opacity_reverse 500ms map-get($delays, loading_page_delay) linear forwards;
+    background-color: white;
+    animation: opacity_reverse 500ms map-get($delays, loading_page_delay) linear both;
 
-    &:active{
-        pointer-events: none;
-        cursor: none;
-    }
-
-    &:hover{
-        pointer-events: none;
-        cursor: none;
-    }
-
-    &:focus{
-        pointer-events: none;
-        cursor: none;
-    }
-
-
-    .loading_spinner{
-        height: 50%;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        border: 10px solid map-get($main_colors, primary-color);
-        border-radius: 300px;
-        background-color: map-get($main_colors, secondary-color);
-
-        i{
-            font-size: 50px;
-            color: map-get($main_colors, tertiary-color);
-            animation: rotate 1500ms linear both infinite;
-        }
+    .text{
+        width: 100%;
+        animation: rotate-x 1500ms 0ms linear both infinite;
 
         h2{
-            font-family: Shrikhand-Regular;
-            font-size: 30px;
-            color: map-get($main_colors, tertiary-color);
-            animation: left_to_right 500ms linear both infinite alternate;
+            width: 90%;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 50px 0px;
+            text-align: center;
+            background-color: red;
+            border-radius: 30px;
+            box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.65);
+            font-family: Shrikhand;
+        }
+    }
+
+    .object{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+
+        .character{
+            height: 140px;
+            width: 50vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+
+            .head{
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                top: 0px;
+                background-color: black;
+                border-radius: 50%;
+            }
+
+            .body{
+                height: 60px;
+                width: 10px;
+                position: absolute;
+                top: 20px;
+                background-color: black;
+                border-radius: 10px;
+            }
+
+            .arms{
+                height: 55px;
+                width: 10px;
+                position: absolute;
+                top: 30px;
+                transform-origin: top;
+                background-color: black;
+                border-radius: 10px;
+            }
+
+            .foot{
+                height: 60px;
+                width: 10px;
+                position: absolute;
+                top: 80px;
+                transform-origin: top;
+                background-color: black;
+                border-radius: 10px;
+            }
+
+            .left{
+                animation: members_rotate 600ms 0ms linear both infinite;
+            }
+
+            .right{
+                animation: members_rotate 600ms 0ms linear both infinite reverse;
+            }
+        }
+    }
+
+    .ball{
+        height: 300px;
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 50%;
+        background-color: black;
+        animation: rotate 1200ms 0ms linear both infinite;
+
+        .mark{
+            height: 2px;
+            width: 15%;
+            background-color: white;
+            animation: rotate-reverse 200ms 0ms linear both infinite;
         }
     }
 }

@@ -24,9 +24,9 @@ $lighten_button_bg_color: linear-gradient(to top, map-get($main_colors, lighten-
 // DELAY
 
 $delays: (
-    loading_page_delay: 2000ms,
-    main_page_delay: 2500ms,
-    item_delay: 2500ms
+    loading_page_delay: 3000ms,
+    main_page_delay: 3500ms,
+    item_delay: 3500ms
 );
 
 // BOX SHADOWS

@@ -12,6 +12,26 @@
     }
 }
 
+// members rotate
+
+@keyframes members_rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
 // rotate
 
 @keyframes rotate{
@@ -23,14 +43,25 @@
     }
 }
 
-// left to right
+// rotate reverse
 
-@keyframes left_to_right{
+@keyframes rotate-reverse{
     from{
-        transform: translateX(-5px);
+        transform: rotate(0deg);
     }
     to{
-        transform: translateX(5px);
+        transform: rotate(-360deg);
+    }
+}
+
+// rotate x
+
+@keyframes rotate-x{
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(360deg)
     }
 }
 
