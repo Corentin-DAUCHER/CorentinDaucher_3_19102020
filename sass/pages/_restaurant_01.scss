@@ -111,6 +111,10 @@
                     border-radius: 15px;
                     animation: opacity 2000ms map-get($delays, item_delay) linear both;
 
+                    &:hover{
+                        cursor: pointer;
+                    }
+
                     &:hover .item__name{
                         animation: width-reduce 200ms 0ms linear both;
                     }
