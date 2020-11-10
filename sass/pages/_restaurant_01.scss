@@ -101,7 +101,7 @@
                 transform-origin: top;
 
                 .item{
-                    height: 120px;
+                    height: 80px;
                     width: 100%;
                     margin-top: 15px;
                     display: flex;
@@ -148,7 +148,7 @@
                     }
 
                     &__logo{
-                        height: 120px;
+                        height: 80px;
                         width: 10%;
                         padding: 0px 5%;
                         display: flex;
@@ -180,11 +180,11 @@
         }
 
         input[type=button]{
-            height: 80px;
-            width: 280px;
-            margin: 3% auto 0% auto;
+            height: 60px;
+            width: 210px;
+            margin: 30px auto 0px auto;
             border: none;
-            border-radius: 15px;
+            border-radius: 30px;
             font-size: 18px;
             color: white;
             background: $gradient_bg_color;
