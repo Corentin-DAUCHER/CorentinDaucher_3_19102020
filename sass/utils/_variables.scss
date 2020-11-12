@@ -24,32 +24,19 @@ $lighten_button_bg_color: linear-gradient(to top, map-get($main_colors, lighten-
 
 // LOADING PAGE
 
-// character
-
-$lp_character_color: red;
-
-// ball
-
-$lp_ball_color: yellow;
-
-// mark
-
-$lp_mark_color: red;
-
-// text color
-
-$lp_text_color: white;
-
-// text bg color
-
-$lp_text_bg_color: violet;
+$plate_out_color: darkgrey;
+$plate_in_color: lightgrey;
+$knife_lame_color: grey;
+$knife_body_color: brown;
+$fork_color: grey;
 
 // DELAY
 
 $delays: (
     loading_page_delay: 3000ms,
     main_page_delay: 3500ms,
-    item_delay: 3500ms
+    item_delay: 3500ms,
+    hole_delay: 0ms
 );
 
 // BOX SHADOWS

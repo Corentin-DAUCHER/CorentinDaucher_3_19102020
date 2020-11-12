@@ -1,55 +1,10 @@
-// members rotate
+// LOADING PAGE
 
-@keyframes members_rotate{
-    0%{
-        transform: rotate(0deg);
-    }
-    25%{
-        transform: rotate(30deg);
-    }
-    50%{
-        transform: rotate(0deg);
-    }
-    75%{
-        transform: rotate(-30deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-}
+//fork
 
-// rotate
 
-@keyframes rotate{
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
-}
 
-// rotate reverse
-
-@keyframes rotate-reverse{
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(-360deg);
-    }
-}
-
-// rotate x
-
-@keyframes rotate-x{
-    from{
-        transform: rotateX(0deg);
-    }
-    to{
-        transform: rotateX(360deg)
-    }
-}
+// MAIN
 
 // opacity reverse
 

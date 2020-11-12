@@ -1,4 +1,5 @@
 .loading_page{
+    box-sizing: border-box;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -8,109 +9,123 @@
     position: fixed;
     top: 0px;
     z-index: 1;
-    background-color: white;
+    background-color: black;
     animation: opacity_reverse 500ms map-get($delays, loading_page_delay) linear both;
 
-    .text{
-        width: 100%;
-        animation: rotate-x 1500ms 0ms linear both infinite;
-
-        h2{
-            width: 90%;
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 50px 0px;
-            text-align: center;
-            color: $lp_text_color;
-            background-color: $lp_text_bg_color;
-            border-radius: 30px;
-            box-shadow: map-get($box_shadows, light_box_shadow);
-            font-family: Shrikhand;
-        }
+    h2{
+        width: 50%;
+        padding: 50px;
+        text-align: center;
+        font-family: Shrikhand;
+        color: white;
+        animation: opacity 800ms 0ms linear both infinite alternate;
     }
 
-    .object{
+    .container{
         width: 100%;
+        max-width: 340px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
-        box-sizing: border-box;
+        justify-content: space-around;
 
-        .character{
-            height: 140px;
-            width: 50vw;
+        .knife{
+            height: 300px;
+            width: 15px;
+    
+            .lame{
+                height: 60%;
+                width: 100%;
+                border-top-right-radius: 15px;
+                background-color: $knife_lame_color;
+            }
+    
+            .body{
+                height: 40%;
+                width: 80%;
+                background-color: $knife_body_color;
+            }
+        }
+    
+        .plate_out{
+            height: 200px;
+            width: 200px;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            position: relative;
-            z-index: 1;
-
-            .head{
-                height: 20px;
-                width: 20px;
-                position: absolute;
-                top: 0px;
-                background-color: $lp_character_color;
+            background-color: $plate_out_color;
+            border-radius: 50%;
+    
+            .plate_in{
+                height: 185px;
+                width: 185px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                background-color: $plate_in_color;
                 border-radius: 50%;
+    
+                .food{
+                    font-size: 80px;
+                }
+
+                .hole{
+                    height: 40px;
+                    width: 40px;
+                    position: absolute;
+                    background-color: $plate_in_color;
+                    border-radius: 50%;
+                }
+
+                .hole_1{
+                    top: 40px;
+                    left: 40px;
+                }
+
+                .hole_2{
+                    top: 110px;
+                    left: 75px;
+                }
+
+                .hole_3{
+                    top: 50px;
+                    left: 110px;
+                }
+
+                $delay: map-get($delays, hole_delay);
+
+                @for $i from 1 to 4 {
+
+                    .hole_#{$i}{
+                        $delay : $delay + 800ms;
+                        animation: opacity 0ms $delay linear both;
+                    }
+                }
+            }
+        }
+    
+        .fork{
+            height: 300px;
+            width: 15px;
+            position: relative;
+    
+            .head{
+                height: 80px;
+                width: 100%;
+                border-left: 5px solid $fork_color;
+                border-bottom: 5px solid $fork_color;
+                border-right: 5px solid $fork_color;
             }
 
             .body{
-                height: 60px;
-                width: 10px;
+                height: 100%;
+                width: 5px;
                 position: absolute;
-                top: 20px;
-                background-color: $lp_character_color;
-                border-radius: 10px;
+                top: 0px;
+                left: 10px;
+                background-color: $fork_color;
             }
-
-            .arms{
-                height: 55px;
-                width: 10px;
-                position: absolute;
-                top: 30px;
-                transform-origin: top;
-                background-color: $lp_character_color;
-                border-radius: 10px;
-            }
-
-            .foot{
-                height: 60px;
-                width: 10px;
-                position: absolute;
-                top: 80px;
-                transform-origin: top;
-                background-color: $lp_character_color;
-                border-radius: 10px;
-            }
-
-            .left{
-                animation: members_rotate 600ms 0ms linear both infinite;
-            }
-
-            .right{
-                animation: members_rotate 600ms 0ms linear both infinite reverse;
-            }
-        }
-    }
-
-    .ball{
-        height: 220px;
-        width: 220px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        border-radius: 50%;
-        background-color: $lp_ball_color;
-        animation: rotate 1200ms 0ms linear both infinite;
-
-        .mark{
-            height: 2px;
-            width: 15%;
-            background-color: $lp_mark_color;
-            animation: rotate-reverse 200ms 0ms linear both infinite;
         }
     }
 }
