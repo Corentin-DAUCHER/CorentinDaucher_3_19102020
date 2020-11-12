@@ -1,7 +1,6 @@
 .footer{
     width: 100%;
     position: relative;
-    top: 150px;
     background-color: #354146;
     animation: z-index 0ms map-get($delays, main_page_delay) linear both;
 
@@ -76,4 +75,12 @@
             }
         }
     }
+}
+
+.index_footer{
+    top: 80px;
+}
+
+.restaurant_footer{
+    top: 230px;
 }
