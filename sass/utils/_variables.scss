@@ -15,6 +15,7 @@ $main_colors: (
 $light_bg_color: #F2F2F2;
 $darken_bg_color: darken(#F2F2F2, 5%);
 $gradient_bg_color: linear-gradient(to top, map-get($main_colors, primary-color), map-get($main_colors, secondary-color));
+$heart_full_color: #d16adb;
 
 // button
 
