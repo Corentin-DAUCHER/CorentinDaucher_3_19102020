@@ -1,6 +1,7 @@
 header{
     height: 80px;
     width: 100%;
+    position: relative;
     top: 0px;
     background-color: white;
     z-index: 0;
@@ -38,8 +39,4 @@ header{
         }
     }
     
-}
-
-.restaurant_header{
-    position: fixed;
 }
