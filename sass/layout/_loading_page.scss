@@ -21,9 +21,10 @@
             margin: 50px auto;
             padding: 50px 0px;
             text-align: center;
-            background-color: red;
+            color: $lp_text_color;
+            background-color: $lp_text_bg_color;
             border-radius: 30px;
-            box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.65);
+            box-shadow: map-get($box_shadows, light_box_shadow);
             font-family: Shrikhand;
         }
     }
@@ -51,7 +52,7 @@
                 width: 20px;
                 position: absolute;
                 top: 0px;
-                background-color: black;
+                background-color: $lp_character_color;
                 border-radius: 50%;
             }
 
@@ -60,7 +61,7 @@
                 width: 10px;
                 position: absolute;
                 top: 20px;
-                background-color: black;
+                background-color: $lp_character_color;
                 border-radius: 10px;
             }
 
@@ -70,7 +71,7 @@
                 position: absolute;
                 top: 30px;
                 transform-origin: top;
-                background-color: black;
+                background-color: $lp_character_color;
                 border-radius: 10px;
             }
 
@@ -80,7 +81,7 @@
                 position: absolute;
                 top: 80px;
                 transform-origin: top;
-                background-color: black;
+                background-color: $lp_character_color;
                 border-radius: 10px;
             }
 
@@ -102,13 +103,13 @@
         align-items: center;
         justify-content: space-between;
         border-radius: 50%;
-        background-color: black;
+        background-color: $lp_ball_color;
         animation: rotate 1200ms 0ms linear both infinite;
 
         .mark{
             height: 2px;
             width: 15%;
-            background-color: white;
+            background-color: $lp_mark_color;
             animation: rotate-reverse 200ms 0ms linear both infinite;
         }
     }

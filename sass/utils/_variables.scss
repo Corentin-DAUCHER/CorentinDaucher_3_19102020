@@ -21,6 +21,27 @@ $gradient_bg_color: linear-gradient(to top, map-get($main_colors, primary-color)
 $button_bg_color: linear-gradient(to top, map-get($main_colors, primary-color), map-get($main_colors, secondary-color));
 $lighten_button_bg_color: linear-gradient(to top, map-get($main_colors, lighten-primary-color), map-get($main_colors, lighten-secondary-color));
 
+// LOADING PAGE
+
+// character
+
+$lp_character_color: green;
+
+// ball
+
+$lp_ball_color: red;
+
+// mark
+
+$lp_mark_color: yellow;
+
+// text color
+
+$lp_text_color: white;
+
+// text bg color
+
+$lp_text_bg_color: blue;
 
 // DELAY
 
