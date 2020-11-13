@@ -8,6 +8,7 @@
     justify-content: center;
     position: fixed;
     top: 0px;
+    left: 0px;
     z-index: 1;
     background-color: black;
     animation: opacity_reverse 500ms map-get($delays, loading_page_delay) linear both;
