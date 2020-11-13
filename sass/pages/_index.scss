@@ -82,6 +82,8 @@
     
             .container{
                 width: 100%;
+                max-width: $index-max-width;
+                margin: 0px auto;
                 padding: 15px 0px;
                 display: flex;
                 flex-direction: column;
@@ -95,11 +97,7 @@
     
                 &__text{
                     width: 100%;
-    
-                    h2{
-                        padding-left: 15px;
-                    }
-    
+                    padding-left: 15px;
                 }
     
                 &__block{
@@ -155,12 +153,17 @@
         background-color: $light_bg_color;
     
         &__title{
+            width: 100%;
+            max-width: $index-max-width;
+            margin: 0px auto;
             padding-top: 15px;
-            padding-left: 15px;
+            padding-left: 30px;
         }
     
         &__container{
             width: 100%;
+            max-width: $index-max-width;
+            margin: 0px auto;
             padding: 15px 0px;
             display: flex;
             flex-direction: column;
@@ -186,10 +189,6 @@
     
                 @media all and (min-width: $tab_vertical_bp){
                     width: 45%;
-                }
-    
-                @media all and (min-width: $tab_horizontal_bp){
-                    width: 30%;
                 }
     
                 &__img{

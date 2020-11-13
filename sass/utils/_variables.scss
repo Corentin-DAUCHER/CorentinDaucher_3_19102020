@@ -43,10 +43,16 @@ $delays: (
 
 $box_shadows: (
     light_box_shadow: 0px 0px 12px 0px rgba(0,0,0,0.5),
-    darken_box_shadow: 0px 0px 12px 0px rgba(0,0,0,0.8)
+    darken_box_shadow: 0px 0px 12px 0px rgba(0,0,0,0.8),
+    header_box_shadow: 0px 0px 12px 0px rgba(0,0,0,0.5)
 );
 
 // BREAKPOINTs
 
 $tab_vertical_bp: 700px;
-$tab_horizontal_bp: 1200px;
+
+// MAX-WIDTH
+
+$index-max-width: 1200px;
+$menu-max-width: 800px;
+$header-max-width: 860px;

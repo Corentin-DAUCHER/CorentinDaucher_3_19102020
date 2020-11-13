@@ -5,20 +5,23 @@ header{
     top: 0px;
     background-color: white;
     z-index: 3;
+    box-shadow: map-get($box_shadows, header_box_shadow);
     animation: z-index 0ms map-get($delays, main_page_delay) linear backwards;
 
     .header__container{
         height: 100%;
         width: 100%;
+        max-width: $header-max-width;
+        margin: 0px auto;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        box-shadow: map-get($box_shadows, light_box_shadow);
+        position: relative;
 
         .previous{
             position: absolute;
-            left: 15px;
+            left: 0px;
             font-size: 30px;
             text-decoration: none;
             color: black;
