@@ -202,11 +202,13 @@
                     &__img{
                         height: 80%;
                         width: 100%;
+                        position: relative;
         
                         a{
                             height: 100%;
                             width: 100%;
                             display: flex;
+                            position: relative;
                             text-decoration: none;
                             img{
                                 height: 100%;
@@ -215,27 +217,19 @@
                                 border-radius: 15px 15px 0px 0px;
                             }
             
-                            .enabled{
+                            .new_marker{
                                 height: fit-content;
                                 width: fit-content;
                                 padding: 3px;
                                 opacity: 0;
-                                position: relative;
+                                position: absolute;
                                 top: 12px;
-                                right: 90px;
+                                right: 12px;
                                 background-color: map-get($main_colors, tertiary-color);
-                                animation: opacity 280ms 0ms linear alternate infinite both;
                             }
-            
-                            .disabled{
-                                height: fit-content;
-                                width: fit-content;
-                                padding: 3px;
-                                opacity: 0;
-                                position: relative;
-                                top: 12px;
-                                right: 90px;
-                                background-color: map-get($main_colors, tertiary-color);
+
+                            .enabled{
+                                animation: opacity 280ms 0ms linear alternate infinite both;
                             }
                         }
                     }
