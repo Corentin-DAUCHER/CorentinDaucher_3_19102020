@@ -63,7 +63,7 @@
                     font-size: 25px;
                     box-shadow: map-get($box_shadows, light_box_shadow);
     
-                    &:active{
+                    &:hover{
                         background: $lighten_button_bg_color;
                         box-shadow: map-get($box_shadows, darken_box_shadow);
                         outline: none;
